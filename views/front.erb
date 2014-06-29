@@ -1,0 +1,8 @@
+<h2><%= @card.front.capitalize %></h2>
+<form action="/decks/<%= @card.deck_id %>/cards/<%= @card.id %>/back" method="POST">
+  <div>
+    <label>Back</label>
+    <input type="text" name="card[back]"/>
+  </div>
+  <input type="submit" value="Submit"/>
+</form>
